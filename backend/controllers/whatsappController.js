@@ -141,6 +141,7 @@ const allGroupsInfo = asyncHandler(async (req, res) => {
 // @access
 const sendMessage = asyncHandler(async (req, res) => {
   if (!req.body.number) {
+    console.log(req.body.number);
     res.status(400);
     throw new Error('Please enter a number to send to');
   }

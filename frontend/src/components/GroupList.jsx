@@ -3,20 +3,24 @@ import { useState, useEffect } from 'react';
 // import { deleteGoal } from '../features/goals/goalSlice';
 
 const GroupList = () => {
-  // const dispatch = useDispatch();
-
   const [groups, setGroups] = useState([]);
 
   useEffect(() => {
     const abortCont = new AbortController();
+    const url = '/api/wa/all-groups-info';
 
-    const fetchGroups = async () => {
-      const res = await fetch('/api/wa/all-groups-info', { signal: abortCont.signal });
-      const data = await res.json();
-      console.log(data);
-      setGroups(data);
+    const fetchData = async () => {
+      try {
+        const response = await fetch(url, { signal: abortCont.signal });
+        const json = await response.json();
+        setGroups(json);
+        console.log(json);
+      } catch (error) {
+        console.log('error', error);
+      }
     };
-    fetchGroups();
+
+    fetchData();
     return () => abortCont.abort();
   }, []);
 
@@ -31,7 +35,7 @@ const GroupList = () => {
     ) : (
       <h3>You have not set any goals</h3>
     )} */}
-      <h2>Whatsapp Groups:</h2>
+      <h2>My Whatsapp Chats:</h2>
       <ul>
         {groups &&
           groups.map((group) => (

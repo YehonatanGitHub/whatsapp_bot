@@ -13,6 +13,20 @@ client.on('qr', (qr) => {
 });
 
 client.on('ready', () => {
+  // client
+  //   .isRegisteredUser(number)
+  //   .then((c) => console.log(c))
+  //   .catch((err) => console.log(err));
+  // client
+  //   .getNumberId(number)
+  //   .then((c) => console.log(c))
+  //   .catch((err) => console.log(err));
+  // getProfilePicUrl
+  // client
+  //   .getNumberId(+972542140173)
+  //   .then((c) => console.log(c))
+  //   .catch((err) => console.log(err));
+
   console.log('whatsappWeb Client is ready!');
 });
 
