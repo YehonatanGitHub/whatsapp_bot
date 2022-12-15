@@ -5,7 +5,6 @@ import GoalForm from '../components/GoalForm';
 import GoalItem from '../components/GoalItem';
 import Spinner from '../components/Spinner';
 import GroupList from '../components/GroupList';
-import ActiveUsersTable from '../components/ActiveUsersTable';
 import { getGoals, reset } from '../features/goals/goalSlice';
 
 function Dashboard() {
@@ -39,10 +38,9 @@ function Dashboard() {
     <>
       <section className='heading'>
         <h1>Welcome {user && user.name}</h1>
-        <p>Whatsapp Dashboard</p>
+        <p>To Whatsapp Dashboard</p>
       </section>
       <GroupList />
-      <ActiveUsersTable />
 
       {/* <GoalForm /> */}
 

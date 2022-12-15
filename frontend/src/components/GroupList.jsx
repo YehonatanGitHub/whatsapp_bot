@@ -8,12 +8,17 @@ const GroupList = () => {
   useEffect(() => {
     const abortCont = new AbortController();
     const url = '/api/wa/all-groups-info';
+    //react fetch api
 
     const fetchData = async () => {
       try {
         const response = await fetch(url, { signal: abortCont.signal });
         const json = await response.json();
-        setGroups(json);
+        const result = Array.isArray(json);
+        if (result) {
+          setGroups(json);
+        }
+        console.log('setGroups');
         console.log(json);
       } catch (error) {
         console.log('error', error);
@@ -26,16 +31,7 @@ const GroupList = () => {
 
   return (
     <section className='content'>
-      {/* {goals.length > 0 ? (
-      <div className='groups'>
-        {goals.map((goal) => (
-          <GoalItem key={goal._id} goal={goal} />
-        ))}
-      </div>
-    ) : (
-      <h3>You have not set any goals</h3>
-    )} */}
-      <h2>My Whatsapp Chats:</h2>
+      <h2>My Whatsapp Chats</h2>
       <ul>
         {groups &&
           groups.map((group) => (

@@ -1,3 +1,6 @@
-2022/10/30-06:26:29.701 4ec0 Reusing MANIFEST C:\Users\Jonathan\Documents\My Files\coding\projects\whatsapp\test_whatsapp\MERN_TEMPLATE\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
-2022/10/30-06:26:29.703 4ec0 Recovering log #7
-2022/10/30-06:26:29.704 4ec0 Reusing old log C:\Users\Jonathan\Documents\My Files\coding\projects\whatsapp\test_whatsapp\MERN_TEMPLATE\.wwebjs_auth\session\Default\Local Storage\leveldb/000007.log 
+2022/12/15-22:30:53.937 73b4 Reusing MANIFEST C:\Users\Jonathan\Documents\My Files\coding\projects\whatsapp\test_whatsapp\MERN_TEMPLATE\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
+2022/12/15-22:30:53.938 73b4 Recovering log #117
+2022/12/15-22:30:53.941 73b4 Reusing old log C:\Users\Jonathan\Documents\My Files\coding\projects\whatsapp\test_whatsapp\MERN_TEMPLATE\.wwebjs_auth\session\Default\Local Storage\leveldb/000117.log 
+2022/12/15-22:56:55.152 552c Level-0 table #121: started
+2022/12/15-22:56:55.158 552c Level-0 table #121: 22249 bytes OK
+2022/12/15-22:56:55.161 552c Delete type=0 #117
